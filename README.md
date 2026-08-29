@@ -1,8 +1,10 @@
-# Telegram Loan Application Demo
+# Telegram Loan Bot Backend — Demo
 
-Build: npm install
-Start: npm start
+A simple demo backend for a Telegram loan-application project.
 
-Set TELEGRAM_BOT_TOKEN as a secret/environment variable on your host.
+Render: create a Web Service from this repository and select Docker. The Dockerfile handles installation and startup.
 
-Do not collect PINs, passwords, OTPs, or other secret authentication credentials.
+POST `/api/applications` accepts:
+fullName, phone, amount, purpose.
+
+This demo intentionally does not collect passwords, PINs, OTPs, card credentials, or other authentication secrets.
